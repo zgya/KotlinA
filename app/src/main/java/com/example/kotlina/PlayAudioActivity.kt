@@ -14,7 +14,7 @@ class PlayAudioActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_audio)
-        Log.d("PlayAudioActivity","video is playing")
+        Log.d("PlayAudioActivity","video is playing!!!!")
         initMediaPlayer()
         play.setOnClickListener {
             if (!mediaPlayer.isPlaying) {
