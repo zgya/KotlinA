@@ -3,6 +3,7 @@ package com.example.kotlina
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.media.MediaPlayer
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_play_audio.*
 
 
@@ -13,6 +14,7 @@ class PlayAudioActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_play_audio)
+        Log.d("PlayAudioActivity","video is playing")
         initMediaPlayer()
         play.setOnClickListener {
             if (!mediaPlayer.isPlaying) {
@@ -45,4 +47,7 @@ class PlayAudioActivity: AppCompatActivity() {
         mediaPlayer.release()
     }
 
+    fun TestGitHub(){
+
+    }
 }
